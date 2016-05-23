@@ -1,18 +1,3 @@
-# Instructions:
-#    Build container:
-#    $ docker build --rm --no-cache -t nginx-http2 .
-#    Bootstrap the container:
-#    $ docker run -d --name nginx-http2 -p 443:443 \
-#      -v "$PWD"/public:/var/www/web nginx-http2
-#    Run the container:
-#    $ docker start nginx-http2
-#    Attach into the container:
-#    $ docker exec -it nginx-http2 bash
-#   Stop container:
-#     $ docker stop nginx-http2
-#   Remove container:
-#     $ docker rm -f nginx-http2
-#
 FROM alpine:latest
 
 ENV NGINX_VERSION 1.9.15
